@@ -1,0 +1,25 @@
+.all{max-width: 500px;margin: auto; border: solid 2px black; padding: 13px 100px 40px; 
+    text-align: center; box-sizing: border-box; border-bottom: 10px solid #46a358;}
+.X_img{margin-bottom: 21px; margin-left: 369px;}
+.title{margin-bottom: 40px;}
+.title01{font-weight: 500;font-size: 20px;line-height: 80%;color: #3d3d3d;}
+.title02{font-weight: 250;font-size: 18px;line-height: 89%;color: #3d3d3d; padding: 0px 11px;}
+.title03{font-weight: 500;font-size: 20px;line-height: 80%;color: #46a358;}
+.p01{font-weight: 400;font-size: 13px;line-height: 123%;color: #3d3d3d; margin-bottom: 15px;text-align: left;}
+.name{width: 300px;height: 40px;font-weight: 400;font-size: 14px;line-height: 114%;padding-left: 14px;
+    color: #a5a5a5;border: 1px solid #eaeaea;border-radius: 5px; margin-bottom: 15px;}
+.mail{width: 300px;height: 40px;font-weight: 400;font-size: 14px;line-height: 114%;margin-bottom: 15px;
+    color: #a5a5a5;border: 1px solid #eaeaea;border-radius: 5px;padding-left: 14px;}
+.password{width: 300px;height: 40px;font-weight: 400;font-size: 14px;line-height: 114%;margin-bottom: 15px;
+    color: #a5a5a5;border: 1px solid #eaeaea;border-radius: 5px;padding-left: 14px;}
+.password02{width: 300px;height: 40px;font-weight: 400;font-size: 14px;line-height: 114%;margin-bottom: 40px;
+    color: #a5a5a5;border: 1px solid #eaeaea;border-radius: 5px;padding-left: 14px;}
+.register{border-radius: 5px;width: 300px; height: 45px;background: #46a358;font-weight:700; margin-bottom: 32px;
+    font-size: 16px;line-height: 100%;color: #fff;border: 1px solid #eaeaea;}
+.p02{font-weight: 400;font-size: 13px;line-height: 123%;color: #3d3d3d; margin-bottom:  27px;}
+.google{border: 1px solid #eaeaea;border-radius: 5px;width: 300px;height: 40px;font-weight: 500; align-items: center;
+    font-size: 13px;line-height: 123%;text-align: center;color: #727272; background-color: #fff; 
+    display: flex; justify-content: center; margin-bottom: 15px; text-decoration: none;}
+.facebook{border: 1px solid #eaeaea;border-radius: 5px;width: 300px;height: 40px;font-weight: 500; text-align: center;  
+    font-size: 13px;line-height: 123%; text-align: center;color: #727272;  align-items: center;justify-content: center;
+    background-color: #fff; display: flex; text-decoration: none;}
