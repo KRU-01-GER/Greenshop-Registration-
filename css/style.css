@@ -1,0 +1,9 @@
+.container{
+    float: left;
+}
+.container2{
+    float: right;
+}
+.clearfix{
+    clear: both;
+}
