@@ -161,7 +161,6 @@ main section div article a{
     font-weight: 700;
     font-size: 16px;
     line-height: 125%;
-    text-transform: uppercase;
     color: #fff;
     text-decoration: none;
     display: flex;
@@ -182,11 +181,33 @@ main section div article h1 span{
     flex-wrap: wrap;
     max-width: 1200px;
     margin: auto;
+    padding-top: 26px;
 }
 .categories .left_sitebar{
     max-width: 310px;
     width: 100%;
-    min-height: 774px;
+    font-family: cera_700;
+    text-decoration: none;
+    
+}
+.categories .left_sitebar nav{
+    font-size: 15px;
+    line-height: 267%;
+    color: #3d3d3d;
+    text-decoration: none;
+    font-family: cera_400;
+}
+.categories .left_sitebar img{
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 377px;
+}
+.categories .left_sitebar h2{
+    padding-bottom: 7px;
+    font-size: 18px;
+line-height: 89%;
+color: #3d3d3d;
+font-family: cera_700;
 }
 .categories .right_content{
     max-width: 840px;
@@ -195,6 +216,19 @@ main section div article h1 span{
 .categories .right_content .flex01{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+}
+.flex01 article h1{
+    font-size: 16px;
+    line-height: 100%;
+    color: #3d3d3d;
+    font-family: cera_400;
+}
+.flex01 article p{
+    font-size: 18px;
+    line-height: 89%;
+    color: #46a358;
+    font-family: cera_700;
 }
 .categories .right_content article{
     width: 250px;
@@ -202,15 +236,25 @@ main section div article h1 span{
 .categories .flex01{
     display: flex;
     flex-wrap: wrap;
+    font-family: cera_400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
 }
 .categories .flex01 nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+    font-family: cera_400;
 }
 .a1234{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
+    border: 1px solid #e5e5e5;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d
 }
