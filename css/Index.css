@@ -181,7 +181,7 @@ main section div article h1 span{
     flex-wrap: wrap;
     max-width: 1200px;
     margin: auto;
-    padding-top: 26px;
+    padding-top: 50px;
 }
 .categories .left_sitebar{
     max-width: 310px;
@@ -190,17 +190,16 @@ main section div article h1 span{
     text-decoration: none;
     
 }
-.categories .left_sitebar nav{
+.categories .left_sitebar ul{
     font-size: 15px;
     line-height: 267%;
     color: #3d3d3d;
     text-decoration: none;
     font-family: cera_400;
+    list-style: none;
 }
 .categories .left_sitebar img{
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding-top: 377px;
+    padding-top: 150px;
 }
 .categories .left_sitebar h2{
     padding-bottom: 7px;
@@ -218,7 +217,7 @@ font-family: cera_700;
     justify-content: space-between;
     flex-direction: row;
 }
-.flex01 article h1{
+.flex01 article h3{
     font-size: 16px;
     line-height: 100%;
     color: #3d3d3d;
@@ -233,28 +232,81 @@ font-family: cera_700;
 .categories .right_content article{
     width: 250px;
 }
+ul a{
+    text-decoration: none;
+    color: #3d3d3d;
+    font-family: cera_400;
+}
+a{
+    list-style: none;
+}
 .categories .flex01{
-    display: flex;
     flex-wrap: wrap;
     font-family: cera_400;
     font-size: 15px;
     line-height: 107%;
     color: #3d3d3d;
 }
-.categories .flex01 nav{
+.categories .right_content .flex01 ul{
+    display: flex;
+    justify-content: space-between;
+}
+.categories .right_content .flex01 ul li{
+    list-style: none;
+    margin-left: 40px;
+}
+.categories .right_content .flex01 ul li:hover a{
+    color: #46a358;
     font-size: 15px;
     line-height: 107%;
-    color: #3d3d3d;
-    font-family: cera_400;
+    font-family: cera_700;
+    text-decoration: underline;
 }
-.a1234{
+.left_sitebar ul li:hover a{
+    color: #46a358;
+    font-size: 15px;
+    line-height: 107%;
+    font-family: cera_700; 
+}
+.categories .right_content .pagination{
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
-    align-items: flex-end;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.categories .right_content .pagination ul{
+    display: flex;
+    justify-content: space-between;
+}
+.categories .right_content .pagination ul li{
+    list-style: none;
+    margin-left: 10px;
+}
+.pagination a{
     border: 1px solid #e5e5e5;
-    font-weight: 300;
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     font-size: 18px;
     line-height: 89%;
-    color: #3d3d3d
+    color: #3d3d3d;
+}
+.categories .pagination ul li:last-of-type:hover a svg path{
+    /*content: "";*/
+    /*display: inline-block;*/
+    /*width: 18px;*/
+    /*height: 18px;*/
+    /*background-image: url("../images/right_bottom.svg");*/
+    stroke: white!important;
+
+}
+.categories .pagination ul li:hover{
+    background-color: #46a358;
+}
+.categories .pagination ul li:hover a{
+    color: white;
 }
