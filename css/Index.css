@@ -69,6 +69,32 @@ header ul{
     list-style: none;
     padding-top: 7px;
 }
+header nav ul .dropdown{
+    display: block;
+    width: 188px;
+    background: #edf6ee;
+    position: absolute;
+    top: 65px;
+    height: 0;
+    opacity: 0;
+}
+header nav ul li.drop{
+    position: relative;
+}
+header nav ul li.drop:hover .dropdown{
+    opacity: 1;
+    height: auto;
+    transition: 0.5s;
+}
+header nav ul .dropdown li{
+    display: block;
+    font-size: 16px;
+    color: #3d3d3d;
+    font-family: cera_400;
+}
+.dropdown a img{
+    float: right;
+}
 header .logo{
     margin-right: 229px;
     float: left;
@@ -119,13 +145,14 @@ header nav li:hover::after{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 40px;
 }
 .banner article{
     max-width: 557px;
     display: inline-block;
     margin-right: 93px;
 }
-main section div article h4{
+main .banner div article h4{
     font-weight: 500;
     font-size: 14px;
     line-height: 114%;
@@ -136,7 +163,7 @@ main section div article h4{
     padding-bottom: 7px;
     font-family: cera_400;
 }
-main section div article h1{
+main .banner div article h1{
     font-weight: 900;
     font-size: 70px;
     line-height: 100%;
@@ -145,7 +172,7 @@ main section div article h1{
     padding-bottom: 5px;
     font-family: cera_900;
 }
-main section div article p{
+main .banner div article p{
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
@@ -153,7 +180,7 @@ main section div article p{
     padding-bottom: 44px;
     font-family: cera_400;
 }
-main section div article a{
+main .banner div article a{
     border-radius: 6px;
     width: 140px;
     height: 40px;
@@ -168,7 +195,7 @@ main section div article a{
     align-items: center;
     font-family: cera_700;
 }
-main section div article h1 span{
+main .banner div article h1 span{
     color: #46a358;
 }
 
@@ -181,7 +208,7 @@ main section div article h1 span{
     flex-wrap: wrap;
     max-width: 1200px;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 .categories .left_sitebar{
     max-width: 310px;
@@ -199,14 +226,14 @@ main section div article h1 span{
     list-style: none;
 }
 .categories .left_sitebar img{
-    padding-top: 150px;
+    padding-top: 300px;
 }
 .categories .left_sitebar h2{
     padding-bottom: 7px;
     font-size: 18px;
-line-height: 89%;
-color: #3d3d3d;
-font-family: cera_700;
+    line-height: 89%;
+    color: #3d3d3d;
+    font-family: cera_700;
 }
 .categories .right_content{
     max-width: 840px;
@@ -216,6 +243,11 @@ font-family: cera_700;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    flex-wrap: wrap;
+    font-family: cera_400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
 }
 .flex01 article h3{
     font-size: 16px;
@@ -223,14 +255,66 @@ font-family: cera_700;
     color: #3d3d3d;
     font-family: cera_400;
 }
+.flex01 article img{
+    padding-bottom: 37px;
+}
+.flex01 article li a svg{
+    background: ;
+}
 .flex01 article p{
     font-size: 18px;
     line-height: 89%;
     color: #46a358;
     font-family: cera_700;
 }
-.categories .right_content article{
+.flex01 article p span{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 89%;
+    color: #a5a5a5;
+    display: inline-block;
+    text-decoration: line-through;
+}
+.flex01 article{
     width: 250px;
+    margin-bottom: 70px;
+    position: relative;
+    border-top: solid 1px transparent;
+    padding-top: 31px ;
+}
+.flex01 article:hover{
+    border-top: solid 1px #46a358;
+}
+.flex01 article:hover ul{
+    opacity: 1;
+}
+.flex01 article ul{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    bottom: 45px;
+    left: calc(50%-62px);
+    opacity: 0;
+    transition: 0.4s;
+}
+.flex01 article ul li{
+width: 20px;
+height: 20px;
+}
+.flex01 article ul li:hover a svg path{
+    stroke: #46a358;
+}
+.flex01 article .sale{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background-color: #46a358;
+    padding: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    margin: 0;
 }
 ul a{
     text-decoration: none;
@@ -239,13 +323,6 @@ ul a{
 }
 a{
     list-style: none;
-}
-.categories .flex01{
-    flex-wrap: wrap;
-    font-family: cera_400;
-    font-size: 15px;
-    line-height: 107%;
-    color: #3d3d3d;
 }
 .categories .right_content .flex01 ul{
     display: flex;
@@ -270,9 +347,9 @@ a{
 }
 .categories .right_content .pagination{
     display: flex;
-    justify-content: flex-end;
     margin-top: 20px;
     margin-bottom: 80px;
+    padding-left: 74%;
 }
 .categories .right_content .pagination ul{
     display: flex;
@@ -308,5 +385,5 @@ a{
     background-color: #46a358;
 }
 .categories .pagination ul li:hover a{
-    color: white;
+    color: white!important;
 }
