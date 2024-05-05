@@ -537,8 +537,12 @@ color: #727272;
     display: flex;
     justify-content: space-between;
 }
+.footer01 .email form{
+    display: flex;
+    justify-content: center;   
+}
 .footer01 input{
-    
+    border-radius:   6px 0 0 6px;      
 width: 269px;
 height: 40px;
 }
@@ -547,9 +551,7 @@ height: 40px;
 font-size: 18px;
 line-height: 89%;
 color: #fff;
-    position: relative;
-    left: 1px;
-    
+border-radius: 0 6px 6px 0;    
 width: 85px;
 height: 40px;
 background: #46a358
@@ -561,7 +563,7 @@ background: #46a358
     padding-bottom: 9px;
 }
 .footer01 div p{
-    padding-bottom: 24px;
+    padding-bottom: 24px; 
 }
 .gradient{
   /* Safari 4-5, Chrome 1-9 */
@@ -581,17 +583,19 @@ background: #46a358
 
   height: 88px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .gradient div{
     display: flex;
+    margin-left: 22px;
+  margin-right: 22px;
 }
 
 
 .footer02{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 33px;
     padding-bottom: 27px;
 }
@@ -601,6 +605,10 @@ background: #46a358
 .footer02 div ul li{
     padding-bottom: 10px;
     list-style-type: none;
+}
+.footer02 .media{
+    margin-right: 155px;
+    margin-left: 25px;
 }
 .footer02 div .svg{
     display: flex;
