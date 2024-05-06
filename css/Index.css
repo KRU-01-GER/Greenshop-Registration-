@@ -539,22 +539,49 @@ color: #727272;
 }
 .footer01 .email form{
     display: flex;
-    justify-content: center;   
+    /*justify-content: center;*/  
+    width: 354px; 
+    height: 40px;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    flex-direction: column;
 }
 .footer01 input{
-    border-radius:   6px 0 0 6px;      
+    /*border-radius:   6px 0 0 6px;      
 width: 269px;
-height: 40px;
+height: 40px;*/
+    flex-grow: 1;
+    
+    border: 1px solid #ccc;
+    border-right: none;
+    line-height: 38px;
+    padding-left: 10px;
+    width: 269px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius:6px;
+    margin-bottom: 18px;
+    margin-top: 25px;
 }
 .footer01 button{
-    font-family: cera_700;
+    /*font-family: cera_700;
 font-size: 18px;
 line-height: 89%;
 color: #fff;
 border-radius: 0 6px 6px 0;    
 width: 85px;
 height: 40px;
-background: #46a358
+background: #46a358*/
+    width: 85px;
+    border: 1px solid #ccc;
+    background: #46a358;
+    line-height: 38px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-family: cera_700;
+    border-bottom-right-radius:6px ;
+    border-top-right-radius:6px ;
+    margin-bottom: 0px;
 }
 .footer01 div img{
     padding-bottom: 15px;
